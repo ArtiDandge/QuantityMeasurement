@@ -1,8 +1,8 @@
+html{
+    background: #F5F6FA;
+}
+
 .homeContainer{
-    top: 85px;
-    left: 0px;
-    width: 1366px;
-    height: 684px;
     background: #F5F6FA 0% 0% no-repeat padding-box;
     opacity: 1;
     display: flex;
@@ -123,22 +123,7 @@ img{
     opacity: 1;
 }
 
-#TextFieldFrom, #TextFieldTo {
-    width: 252px;
-    font-size: large;
-    text-align: left;
-    padding-left: 14px;
-    font-weight: bold;
-}
 
-#FromDropdown, #ToDropdown{
-    width: 240px;
-    height: 33px;
-    border: none;
-    font-size: small;
-    text-align: left;
-    padding-left: 14px;
-}
 
 
 

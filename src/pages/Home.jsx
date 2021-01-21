@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
-import {AppBar} from '@material-ui/core';
+import {AppBar, TextField, Select, MenuItem} from '@material-ui/core';
 import './home.css';
 import Card from 'react-bootstrap/Card';
 import length from '../assets/length.png'
 import temperature from '../assets/temperature.png'
 import volumn from '../assets/volumn.png'
+
 
 class Home extends Component{
     render(){
@@ -22,7 +23,7 @@ class Home extends Component{
                             <img src={length}/>
                         </div>
                         <div>
-                            Length
+                            <lable>Length</lable>
                         </div>
                         </Card>
                         <Card id="temperature">
@@ -30,7 +31,7 @@ class Home extends Component{
                             <img src={temperature}/>
                         </div>
                         <div>
-                            Temperature
+                            <lable>Temperature</lable>
                         </div>
                         </Card>
                         <Card id="volumn">
@@ -38,31 +39,54 @@ class Home extends Component{
                             <img src={volumn}/>
                         </div>
                         <div>
-                            Volumn
+                            <lable>Volumn</lable>
                         </div>
                         </Card>
                     </div>
                     <div className="calculationContainer">
-                    <Card>                        
+                    <Card className="FromCardContainer">                        
                         <div id="fromLable">
-                            From
+                            <lable>From</lable>
                         </div>
                         <div id="From">
                             <div id="inputFrom">
-                                <input type="text"></input>
+                                <TextField id="TextFieldFrom" type="number" variant="outlined" ></TextField>
+                            </div>
+                            <div id="selectFrom">
+                                <Select id="FromDropdown" onChange={this.handleChange}>
+                                    <MenuItem value=""><em>None</em></MenuItem>
+                                    <MenuItem value={20}>Kilometre</MenuItem>
+                                    <MenuItem value={20}>Metres</MenuItem>
+                                    <MenuItem value={10}>Centimetres</MenuItem>
+                                    <MenuItem value={30}>Milimetre</MenuItem>
+                                    <MenuItem value={10}>Micrometre</MenuItem>
+                                    <MenuItem value={40}>Mile</MenuItem>
+                                    <MenuItem value={50}>Foot</MenuItem>
+                                    <MenuItem value={60}>Inch</MenuItem>
+                                </Select>   
                             </div>
                         </div>
                         </Card>
                         <Card>
                         <div id="toLable">
-                           To
+                           <lable>To</lable>
                         </div>
                         <div id="To">
                             <div id="inputTo">
-                                <input type="text"></input>
+                                <TextField id="TextFieldTo" type="number" variant="outlined" ></TextField>
                             </div>
-                            <div id="inputToConverter">
-                                
+                            <div id="selectTo">
+                            <Select id="ToDropdown">
+                                    <MenuItem value=""><em>None</em></MenuItem>
+                                    <MenuItem value={20}>Kilometre</MenuItem>
+                                    <MenuItem value={20}>Metres</MenuItem>
+                                    <MenuItem value={10}>Centimetres</MenuItem>
+                                    <MenuItem value={30}>Milimetre</MenuItem>
+                                    <MenuItem value={10}>Micrometre</MenuItem>
+                                    <MenuItem value={40}>Mile</MenuItem>
+                                    <MenuItem value={50}>Foot</MenuItem>
+                                    <MenuItem value={60}>Inch</MenuItem>
+                                </Select>   
                             </div>    
                         </div>
                         </Card>

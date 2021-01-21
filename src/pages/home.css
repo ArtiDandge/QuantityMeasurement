@@ -21,7 +21,7 @@
 
 #chooseType{
     margin-top: 150px;
-    width: 40%;
+    width: 42%;
     display: flex;
     text-align: left;
     font: normal normal medium 15px/19px Montserrat;
@@ -76,14 +76,13 @@ img{
     align-items: center;
     justify-content: space-around;
     width:45%;
-    margin-inline: 10px ;
 }
 
 #From{
     top: 471px;
     left: 385px;
     width: 280px;
-    height: 96px;
+    height: 100px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #E7DCFE;
     border-radius: 3px;
@@ -106,15 +105,35 @@ img{
 }
 
 #toLable{
-    width: 12%;
+    width: 8%;
 }
 
-input{
+#selectFrom, #selectTo{
+    top: 480px;
+    left: 385px;
     width: 278px;
-    height: 30px;
+    height: 47px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E7DCFE;
+    border-radius: 3px;
     opacity: 1;
+}
+
+#TextFieldFrom, #TextFieldTo {
+    width: 252px;
+    font-size: large;
+    text-align: left;
+    padding-left: 14px;
+    font-weight: bold;
+}
+
+#FromDropdown, #ToDropdown{
+    width: 240px;
+    height: 33px;
     border: none;
+    font-size: small;
+    text-align: left;
+    padding-left: 14px;
 }
 
 

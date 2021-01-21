@@ -1,14 +1,11 @@
 .homeContainer{
-    top: 85px;
-    left: 0px;
-    width: 1366px;
-    height: 684px;
     background: #F5F6FA 0% 0% no-repeat padding-box;
     opacity: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 #welcomeBar{
     position: fixed;
     text-align: center;
@@ -137,7 +134,3 @@ img{
     text-align: left;
     padding-left: 14px;
 }
-
-
-
-

@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import {AppBar, TextField, Select, MenuItem, FormLabel} from '@material-ui/core';
 import './home.css';
 import Card from 'react-bootstrap/Card';
-import length from '../assets/length.png'
+import length from '../assets/lengthNormal.png'
 import temperature from '../assets/temperature.png'
-import volumn from '../assets/volumn.png'
+import volumn from '../assets/volumn1.png'
 import {withRouter} from 'react-router-dom'
 
 class Home extends Component{
@@ -36,6 +36,10 @@ class Home extends Component{
         this.props.history.push('/temperature');
     }
 
+    handleLength=()=>{
+        this.props.history.push('/length');
+    }
+
     render(){
         return(
                 <div className="homeContainer">              
@@ -46,7 +50,7 @@ class Home extends Component{
                     <label>CHOOSE TYPE</label>
                     </div> 
                     <div className="converterCard">
-                        <Card id="length">
+                        <Card id="length" onClick={this.handleLength}>
                         <div>
                             <img src={length}/>
                         </div>

@@ -1,12 +1,11 @@
 import React, {Component} from 'react'
 import {AppBar, TextField, Select, MenuItem, FormLabel} from '@material-ui/core';
 import Card from 'react-bootstrap/Card';
-import './temperature.css'
-import length from '../../assets/lengthNormal.png'
-import temperature from '../../assets/temperatureHot.png'
+import './length.css'
+import length from '../../assets/length.png'
+import temperature from '../../assets/temperature.png'
 import volumn from '../../assets/volumn1.png'
-
-class Temperature extends Component{
+class Length extends Component{
     constructor(){
         super();
     }
@@ -58,9 +57,14 @@ class Temperature extends Component{
                             <div id="selectFrom">
                                 <Select id="FromDropdown">
                                     <MenuItem value=""><em>None</em></MenuItem>
-                                    <MenuItem value={20}>Celsius</MenuItem>
-                                    <MenuItem value={20}>Farhenheit</MenuItem>
-                                    <MenuItem value={10}>Kelvin</MenuItem>                                    
+                                    <MenuItem value={20}>Kilometre</MenuItem>
+                                    <MenuItem value={20}>Metres</MenuItem>
+                                    <MenuItem value={10}>Centimetres</MenuItem>
+                                    <MenuItem value={30}>Milimetre</MenuItem>
+                                    <MenuItem value={10}>Micrometre</MenuItem>
+                                    <MenuItem value={40}>Mile</MenuItem>
+                                    <MenuItem value={50}>Foot</MenuItem>
+                                    <MenuItem value={60}>Inch</MenuItem>                                    
                                 </Select>   
                             </div>
                         </div>
@@ -76,9 +80,14 @@ class Temperature extends Component{
                             <div id="selectTo">
                             <Select id="ToDropdown">
                                 <MenuItem value=""><em>None</em></MenuItem>
-                                <MenuItem value={20}>Celsius</MenuItem>
-                                <MenuItem value={20}>Farhenheit</MenuItem>
-                                <MenuItem value={10}>Kelvin</MenuItem>                                  
+                                <MenuItem value={20}>Kilometre</MenuItem>
+                                <MenuItem value={20}>Metres</MenuItem>
+                                <MenuItem value={10}>Centimetres</MenuItem>
+                                <MenuItem value={30}>Milimetre</MenuItem>
+                                <MenuItem value={10}>Micrometre</MenuItem>
+                                <MenuItem value={40}>Mile</MenuItem>
+                                <MenuItem value={50}>Foot</MenuItem>
+                                <MenuItem value={60}>Inch</MenuItem>                             
                             </Select>   
                             </div>    
                         </div>
@@ -89,4 +98,4 @@ class Temperature extends Component{
     }
 }
 
-export default Temperature;
+export default Length;

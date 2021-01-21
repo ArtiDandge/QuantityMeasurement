@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
 import {AppBar, TextField, Select, MenuItem, FormLabel} from '@material-ui/core';
 import Card from 'react-bootstrap/Card';
-import './length.css'
-import length from '../../assets/length.png'
+import './volumn.css'
+import length from '../../assets/lengthNormal.png'
 import temperature from '../../assets/temperature.png'
-import volumn from '../../assets/volumn1.png'
-class Length extends Component{
+import volumn from '../../assets/volumn.png'
+
+class Volumn extends Component{
     constructor(){
         super();
     }
@@ -20,12 +21,12 @@ class Length extends Component{
                 <label>CHOOSE TYPE</label>
                 </div>
                 <div className="converterCard">
-                    <Card id="lengthCon">
+                    <Card id="length">
                     <div>
                         <img src={length}/>
                     </div>
                     <div>
-                    <FormLabel id="lengthLable">Length</FormLabel>
+                    <FormLabel>Length</FormLabel>
                     </div>
                     </Card>
                     <Card id="temperature">
@@ -36,12 +37,12 @@ class Length extends Component{
                     <FormLabel>Temperature</FormLabel>
                     </div>
                     </Card>
-                    <Card id="volumn">
+                    <Card id="volumnCon">
                     <div>
                         <img src={volumn}/>
                     </div>
                     <div>
-                    <FormLabel>Volumn</FormLabel>
+                    <FormLabel id="volumnLable">Volumn</FormLabel>
                     </div>
                     </Card>
                 </div>   
@@ -57,14 +58,9 @@ class Length extends Component{
                             <div id="selectFrom">
                                 <Select id="FromDropdown">
                                     <MenuItem value=""><em>None</em></MenuItem>
-                                    <MenuItem value={20}>Kilometre</MenuItem>
-                                    <MenuItem value={20}>Metres</MenuItem>
-                                    <MenuItem value={10}>Centimetres</MenuItem>
-                                    <MenuItem value={30}>Milimetre</MenuItem>
-                                    <MenuItem value={10}>Micrometre</MenuItem>
-                                    <MenuItem value={40}>Mile</MenuItem>
-                                    <MenuItem value={50}>Foot</MenuItem>
-                                    <MenuItem value={60}>Inch</MenuItem>                                    
+                                    <MenuItem value={20}>Litre</MenuItem>
+                                    <MenuItem value={20}>Millilitres</MenuItem>
+                                    <MenuItem value={10}>Gallons</MenuItem>                                    
                                 </Select>   
                             </div>
                         </div>
@@ -80,14 +76,9 @@ class Length extends Component{
                             <div id="selectTo">
                             <Select id="ToDropdown">
                                 <MenuItem value=""><em>None</em></MenuItem>
-                                <MenuItem value={20}>Kilometre</MenuItem>
-                                <MenuItem value={20}>Metres</MenuItem>
-                                <MenuItem value={10}>Centimetres</MenuItem>
-                                <MenuItem value={30}>Milimetre</MenuItem>
-                                <MenuItem value={10}>Micrometre</MenuItem>
-                                <MenuItem value={40}>Mile</MenuItem>
-                                <MenuItem value={50}>Foot</MenuItem>
-                                <MenuItem value={60}>Inch</MenuItem>                             
+                                <MenuItem value={20}>Celsius</MenuItem>
+                                <MenuItem value={20}>Farhenheit</MenuItem>
+                                <MenuItem value={10}>Kelvin</MenuItem>                                  
                             </Select>   
                             </div>    
                         </div>
@@ -98,4 +89,4 @@ class Length extends Component{
     }
 }
 
-export default Length;
+export default Volumn;

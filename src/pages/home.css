@@ -9,6 +9,7 @@
     flex-direction: column;
     align-items: center;
 }
+
 #welcomeBar{
     position: fixed;
     text-align: center;
@@ -47,6 +48,7 @@
     width: 173px;
     height: 137px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #f0f3f2;
     border-radius: 7px;
     opacity: 1;
 }

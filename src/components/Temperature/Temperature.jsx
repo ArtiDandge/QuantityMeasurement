@@ -29,12 +29,12 @@ class Temperature extends Component{
                     <FormLabel>Length</FormLabel>
                     </div>
                     </Card>
-                    <Card id="temperature">
+                    <Card id="temperatureCon">
                     <div>
                         <img src={temperature}/>
                     </div>
                     <div>
-                    <FormLabel>Temperature</FormLabel>
+                    <FormLabel id="temperatureLable">Temperature</FormLabel>
                     </div>
                     </Card>
                     <Card id="volumn">

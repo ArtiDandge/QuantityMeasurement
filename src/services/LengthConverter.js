@@ -23,12 +23,12 @@ class LengthConverter {
                 return this.inches / 63360;
             case 7:
                 this.inches = value * from;
-                return this.inches * 25400;
-            case 8:
-                this.inches = value * from;
                 return this.inches / 12;
+            case 8:
+                this.inches = value;
+                return this.inches;
             default:
-                return null;
+                return;
         }
     }
 }

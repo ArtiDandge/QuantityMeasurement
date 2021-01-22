@@ -12,7 +12,6 @@ function Calculate(from, to, fromtext) {
     console.log(from + ','+ to + ','+ fromtext);
 }
 var result = 0;
-lengthObject.Calculate();
 
 class Length extends Component{
     constructor(){

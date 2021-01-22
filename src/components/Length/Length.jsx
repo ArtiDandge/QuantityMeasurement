@@ -9,6 +9,18 @@ class Length extends Component{
     constructor(){
         super();
     }
+    handleTemperature=()=>{
+        this.props.history.push('/temperature');
+    }
+
+    handleLength=()=>{
+        this.props.history.push('/length');
+    }
+
+    handleVolumn=()=>{
+        this.props.history.push('/volumn');
+    }
+
 
     render(){
         return(
@@ -28,7 +40,7 @@ class Length extends Component{
                     <FormLabel id="lengthLable">Length</FormLabel>
                     </div>
                     </Card>
-                    <Card id="temperature">
+                    <Card id="temperature" onClick={this.handleTemperature}>
                     <div>
                         <img src={temperature}/>
                     </div>
@@ -36,7 +48,7 @@ class Length extends Component{
                     <FormLabel>Temperature</FormLabel>
                     </div>
                     </Card>
-                    <Card id="volumn">
+                    <Card id="volumn" onClick={this.handleVolumn}>
                     <div>
                         <img src={volumn}/>
                     </div>

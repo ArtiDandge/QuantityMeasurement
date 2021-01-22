@@ -11,6 +11,18 @@ class Volumn extends Component{
         super();
     }
 
+    handleTemperature=()=>{
+        this.props.history.push('/temperature');
+    }
+
+    handleLength=()=>{
+        this.props.history.push('/length');
+    }
+
+    handleVolumn=()=>{
+        this.props.history.push('/volumn');
+    }
+    
     render(){
         return(
             <div className="homeContainer">
@@ -21,7 +33,7 @@ class Volumn extends Component{
                 <label>CHOOSE TYPE</label>
                 </div>
                 <div className="converterCard">
-                    <Card id="length">
+                    <Card id="length" onClick={this.handleLength}>
                     <div>
                         <img src={length}/>
                     </div>
@@ -29,7 +41,7 @@ class Volumn extends Component{
                     <FormLabel>Length</FormLabel>
                     </div>
                     </Card>
-                    <Card id="temperature">
+                    <Card id="temperature" onClick={this.handleTemperature}>
                     <div>
                         <img src={temperature}/>
                     </div>
@@ -37,7 +49,7 @@ class Volumn extends Component{
                     <FormLabel>Temperature</FormLabel>
                     </div>
                     </Card>
-                    <Card id="volumnCon">
+                    <Card id="volumnCon" onClick={this.handleVolumn}>
                     <div>
                         <img src={volumn}/>
                     </div>
